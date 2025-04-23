@@ -1,6 +1,7 @@
-# Redirect HTTP to HTTPS
+# Redirect HTTP to HTTPS and non-www to www
 http://codeteak.com/*    https://www.codeteak.com/:splat   301!
 http://www.codeteak.com/*    https://www.codeteak.com/:splat   301!
-
-# Redirect non-www to www
 https://codeteak.com/*   https://www.codeteak.com/:splat   301!
+
+# Handle .html extensions (remove .html from URLs for clean URLs)
+/:splat.html   /:splat   301!
