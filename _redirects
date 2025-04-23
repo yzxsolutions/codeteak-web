@@ -1,0 +1,6 @@
+# Redirect HTTP to HTTPS
+http://codeteak.com/*    https://www.codeteak.com/:splat   301!
+http://www.codeteak.com/*    https://www.codeteak.com/:splat   301!
+
+# Redirect non-www to www
+https://codeteak.com/*   https://www.codeteak.com/:splat   301!
